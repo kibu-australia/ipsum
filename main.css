@@ -4,5 +4,27 @@
   font-size: 24px;
 }
 
+.box {  
+padding: 20px;
+background: #fff;
+}
+h1 {
+  text-align: center;
+}
+
 body {
-  position
+  font-family: helvetica;
+  background: #f0f0f0;
+}
+
+#footer {
+  color: #aaa;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+  margin-top: 40px;
+}
+
+#footer  a {
+  color: #333;
+  text-decoration: none;
+}
