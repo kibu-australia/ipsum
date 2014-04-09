@@ -13,6 +13,14 @@
               first))))
 
 (def options (atom {:paragraph-length 10 :num-paragraphs 1}))
+
+(defn sentence [words]
+  (let [fword (clojure.string/capitalize (first words))
+        rwords (rest words)]
+    (str (clojure.string/join " "
+                              (concat [fword] rwords))
+         ".")))
+
 (defn text []
   [:div.box
    [:h1 "Lorem Hipsum"]
@@ -28,10 +36,11 @@
                                :num-paragraphs (-> % .-target .-value))}]
    [:div.text
     (for [i (range 0 (@options :num-paragraphs))]
-      [:p (clojure.string/join " " (take (@options :paragraph-length)
+      [:p (sentence (take (@options :paragraph-length)
                                          (infinite-words)))])]])
 
 (defn setup []
-  (r/render-component [text] (.getElementById js/document "main")))
+  (r/render-component [text]
+                      (.getElementById js/document "main")))
 
 (setup)
