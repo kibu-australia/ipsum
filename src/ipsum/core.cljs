@@ -3,7 +3,7 @@
 
 (enable-console-print!)
 
-(def words-string "artisan occupy burger taco food-truck vegan vegetarian food truck minimal handmade DIY tumblr blogging tweet instagram typewriter irony post-irony cliche meh scene gluten-free sarcasm beer ale brewery coffee arabica single-origin <3 8-bit vintage second-hand wayfarers banjo neo-folk lo-fi hashtag street art Brooklyn fried vinegar vinyl Portlan authentic original quinoa super-food grain oatmeal handpicked preloved")
+(def words-string "kitch biodiesel eco-friendly cliche etsy art ethical fairtrade chillwave cleanse artisan occupy burger taco food-truck vegan vegetarian food truck minimal handmade DIY tumblr blogging tweet instagram typewriter irony post-irony cliche meh scene gluten-free sarcasm beer ale brewery coffee arabica single-origin <3 8-bit vintage second-hand wayfarers banjo neo-folk lo-fi hashtag street art Brooklyn fried vinegar vinyl Portland Brunswick Fitzroy cardigan try-hard small-batch pollo-pescitarian helvetica shabby crass creative grilled trend urban-farming ultra-urban cheap-chic fixed-gear flexitarianauthentic original quinoa super-food grain oatmeal handpicked preloved")
 
 (defn infinite-words []
   (repeatedly
