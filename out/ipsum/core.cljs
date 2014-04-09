@@ -24,6 +24,7 @@
 (defn text []
   [:div.box
    [:h1 "Lorem Hipsum"]
+   [:h3 "Single-Origin Authentic Placeholder Text Generator"]
    [:h5 "Paragraph Length"]
    [:input {:type "range" :value (@options :paragraph-length) :min 10 :max 100
             :style {:width "100%"}
